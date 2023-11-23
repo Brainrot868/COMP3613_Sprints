@@ -10,3 +10,4 @@ from .studentCourseHistory import *
 from .coursePlanCourses import *
 from .coursePlan import *
 from .grade import *
+from .Semester import *
