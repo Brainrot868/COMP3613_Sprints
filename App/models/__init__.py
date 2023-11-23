@@ -11,3 +11,4 @@ from .coursePlanCourses import *
 from .coursePlan import *
 from .grade import *
 from .semester import *
+from .faculty import *
