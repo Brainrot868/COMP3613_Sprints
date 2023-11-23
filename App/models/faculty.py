@@ -5,6 +5,8 @@ class Faculty(db.Model):
     facultyID = db.Column(db.Integer, primary_key=True)
     facultyName = db.Column(db.String(50))
 
+    associated_course = db.relationship('Course', back_populates='faculty', overlaps="courses")
+
     def __init__(self, id, facName):
         self.facultyID = id
         self.facName = facName
