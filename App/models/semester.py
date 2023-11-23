@@ -1,4 +1,4 @@
-from App.database import database
+from App.database import db
 import json
 
 class Semester(db.Model):
