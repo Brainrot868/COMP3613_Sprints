@@ -14,6 +14,6 @@ fastestGrad_views = Blueprint('fastestGrad_views', __name__, template_folder='..
 
 #retrieve route for fastest graduation
 @fastestGrad_views.routes('/fastestGrad', methods=['GET'])
-def get_fastest_grad_route();
+def get_fastest_grad_route():
     fastestRoute = fastestGraduation(Student)
     return fastestRoute 
