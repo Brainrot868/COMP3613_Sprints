@@ -10,3 +10,12 @@ from endpoints import remote
 
 @endpoints.api(name="priotiseElectives", version = "v1")
 class priotiseElectivesApi(remote.Service)
+
+prioritiseElectives_views = Blueprint('prioritiseElectives_views', __name__, template_folder='../templates')
+
+@prioritiseElectives.route('/prioritiseElectives', methods=['GET'])
+def get_priority_electives():
+    priorityElectives = prioritizeElectives(Student)
+    return priorityElectives
+
+
