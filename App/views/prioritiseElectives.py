@@ -13,7 +13,7 @@ class priotiseElectivesApi(remote.Service)
 
 prioritiseElectives_views = Blueprint('prioritiseElectives_views', __name__, template_folder='../templates')
 
-@prioritiseElectives.route('/prioritiseElectives', methods=['GET'])
+@prioritiseElectives_views.route('/prioritiseElectives', methods=['GET'])
 def get_priority_electives():
     priorityElectives = prioritizeElectives(Student)
     return priorityElectives
